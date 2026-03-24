@@ -1,28 +1,96 @@
-# AI Codebase Understanding System
+# 🚀 AI Codebase Understanding System
 
-An AI-powered system that can analyze any GitHub repository and answer questions about the codebase using RAG (Retrieval-Augmented Generation).
+An AI-powered system that analyzes any GitHub repository and answers questions about the codebase using **RAG (Retrieval-Augmented Generation)** and **Gemini LLM**.
 
-## Features
-- Code ingestion from GitHub
-- Semantic search using embeddings
-- Vector database (ChromaDB)
-- AI-powered answers using Gemini
+---
 
-## Tech Stack
-- Python
-- FastAPI (planned)
-- ChromaDB
-- Sentence Transformers
-- Gemini LLM
+## 🔥 Features
 
-## How It Works
-1. Clone repository
-2. Convert code into chunks
-3. Generate embeddings
-4. Store in vector DB
-5. Retrieve relevant code
-6. Generate answer using LLM
+* 📂 Clone and analyze any GitHub repository
+* 🧠 Semantic search using embeddings
+* 🗂 Vector database (ChromaDB)
+* 🤖 AI-powered explanations using Gemini
+* 🔍 Understand code structure and flow
 
-## Run Project
+---
+
+## 🧠 How It Works
+
+```
+GitHub Repo
+   ↓
+Code Ingestion
+   ↓
+Chunking
+   ↓
+Embeddings
+   ↓
+Vector Database
+   ↓
+Retriever
+   ↓
+Gemini LLM
+   ↓
+Final Answer
+```
+
+---
+
+## ⚙️ Tech Stack
+
+* Python
+* Sentence Transformers
+* ChromaDB
+* Gemini API
+* RAG Architecture
+
+---
+
+## 🚀 Run Locally
+
 ```bash
+git clone https://github.com/bhardwajkishan/ai-codebase-analyzer.git
+cd ai-codebase-analyzer
+
+python -m venv venv
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
 python test_rag.py
+```
+
+---
+
+## 💡 Example Query
+
+```
+How are HTTP requests handled?
+```
+
+### Output:
+
+* Step-by-step explanation
+* Code flow
+* Architecture insight
+
+---
+
+## 🎯 Future Improvements
+
+* 🔥 Web UI (FastAPI + React)
+* 🔥 Bug detection system
+* 🔥 Repo-level architecture visualization
+* 🔥 Code documentation generator
+
+---
+
+## 👨‍💻 Author
+
+**Kishan Bhardwaj**
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
