@@ -5,7 +5,7 @@ from app.rag.retriever import retrieve_relevant_chunks
 from app.rag.generator import generate_answer
 from app.rag.llm import generate_final_answer
 
-query = "How are HTTP requests handled?"
+query = "Explain the architecture of this repository"
 
 results = retrieve_relevant_chunks(query)
 
