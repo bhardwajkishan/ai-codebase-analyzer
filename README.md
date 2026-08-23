@@ -53,7 +53,12 @@ git clone https://github.com/bhardwajkishan/ai-codebase-analyzer.git
 cd ai-codebase-analyzer
 
 python -m venv venv
+
+# Windows
 venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
 
 pip install -r requirements.txt
 
