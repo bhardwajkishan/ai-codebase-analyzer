@@ -7,9 +7,6 @@ from app.ingestion.file_reader import read_code_files
 from app.embeddings.chunker import chunk_code
 from app.embeddings.embedder import generate_embeddings
 from app.embeddings.vector_store import store_embeddings
-from app.rag.retriever import retrieve_relevant_chunks
-from app.rag.generator import generate_answer
-from app.rag.llm import generate_final_answer
 
 load_dotenv()
 
@@ -29,6 +26,10 @@ def index(repo_url):
 
 
 def ask(query):
+    from app.rag.retriever import retrieve_relevant_chunks
+    from app.rag.generator import generate_answer
+    from app.rag.llm import generate_final_answer
+
     results = retrieve_relevant_chunks(query)
     prompt = generate_answer(query, results)
     answer = generate_final_answer(prompt)
